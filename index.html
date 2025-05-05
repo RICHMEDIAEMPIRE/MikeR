@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FencePros | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Arrow Fence | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
+      background: #f2f2f2;
       color: #333;
     }
     header {
-      background: #3e2723;
+      background: #1a1a1a;
       color: white;
-      padding: 1.5rem;
       text-align: center;
+      padding: 1.5rem;
     }
     nav {
+      background: #444;
+      padding: 1rem;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
-      background: #6d4c41;
-      padding: 1rem;
     }
     nav a {
       color: white;
@@ -33,7 +33,7 @@
       font-weight: bold;
     }
     .hero {
-      background-image: url('assets/images/fence-hero.jpg');
+      background-image: url('assets/images/fence-yard.jpg');
       background-size: cover;
       background-position: center;
       height: 350px;
@@ -41,14 +41,21 @@
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 2px 2px 5px #000;
+      text-shadow: 2px 2px 5px black;
       font-size: 2.5rem;
       text-align: center;
       padding: 1rem;
+      font-family: 'Playfair Display', serif;
     }
     .section {
       padding: 2rem;
       text-align: center;
+    }
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
     }
     .service-box {
       background: white;
@@ -56,117 +63,97 @@
       padding: 1rem;
       border-radius: 8px;
       max-width: 300px;
-      margin: 1rem auto;
-    }
-    .nav-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .nav-buttons a {
-      background: #3e2723;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+      flex: 1 1 250px;
     }
     footer {
-      background: #3e2723;
+      background: #1a1a1a;
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 3rem;
     }
-
-    /* Overlay */
+    /* Permanent Overlay */
     #promo-overlay {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
       color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-size: 2rem;
       font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 2rem;
       z-index: 9999;
-      font-family: 'Playfair Display', serif;
-      cursor: pointer;
     }
-
     @media (max-width: 600px) {
       .hero { font-size: 1.5rem; height: 250px; }
-      .service-box { width: 90%; }
       #promo-overlay { font-size: 1.5rem; padding: 1rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>FencePros</h1>
-    <p>Strong, Secure & Stylish Fencing</p>
+    <h1>Arrow Fence</h1>
+    <p>Secure. Stylish. Built to Last.</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="layouts.html">Showcase</a>
-    <a href="layout-mowers.html">Previous Layout</a>
-    <a href="layout-artist.html">Next Layout</a>
+    <a href="layout-mowers.html">Previous</a>
+    <a href="layout-artist.html">Next</a>
   </nav>
 
   <div class="hero">
-    Built to Last. Installed with Pride.
+    Professional Fence Installation & Repair
   </div>
 
-  <section class="section" id="services">
+  <section class="section">
+    <h2>About Arrow Fence</h2>
+    <p>With over 20 years of experience, Arrow Fence delivers dependable fencing solutions for residential, commercial, and agricultural properties.</p>
+  </section>
+
+  <section class="section">
     <h2>Our Services</h2>
-    <div class="service-box">
-      <h3>Wood Fencing</h3>
-      <p>Classic look, strong build. Pressure-treated or cedar options available.</p>
-    </div>
-    <div class="service-box">
-      <h3>Vinyl Fencing</h3>
-      <p>Low-maintenance and weather-resistant. Modern and clean.</p>
-    </div>
-    <div class="service-box">
-      <h3>Chain-Link Fencing</h3>
-      <p>Affordable and functional for pets, kids, and property security.</p>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>Wood Privacy Fencing</h3>
+        <p>Classic, durable, and custom-stained to match your property.</p>
+      </div>
+      <div class="service-box">
+        <h3>Metal & Aluminum</h3>
+        <p>Decorative or secure options with rust-resistant protection.</p>
+      </div>
+      <div class="service-box">
+        <h3>Chain-Link & Pet Enclosures</h3>
+        <p>Budget-friendly, secure, and quick to install.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="testimonials">
+  <section class="section">
     <h2>What Customers Say</h2>
-    <p>“Solid crew. Fast install and the fence looks amazing.” — Carla G.</p>
-    <p>“No more neighbor drama. Thanks FencePros!” — Ben M.</p>
+    <p>"Arrow Fence transformed my backyard. Totally professional." — Lisa T.</p>
+    <p>"Fair price, clean work, and it looks incredible." — Mike D.</p>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Get a Quote</h2>
-    <p>Email: sales@fencepros.com</p>
-    <p>Phone: (555) 654-3210</p>
-    <p>Address: 789 Boundary Rd, Yardtown, USA</p>
+  <section class="section">
+    <h2>Contact Us</h2>
+    <p>Email: build@arrowfence.com</p>
+    <p>Phone: (555) 456-7890</p>
+    <p>Location: 123 Straight Line Rd, Postville, USA</p>
   </section>
-
-  <div class="nav-buttons">
-    <a href="index.html">Home</a>
-    <a href="layouts.html">Showcase</a>
-    <a href="layout-mowers.html">Previous Layout</a>
-    <a href="layout-artist.html">Next Layout</a>
-  </div>
 
   <footer>
-    <p>&copy; 2025 FencePros. All rights reserved.</p>
+    <p>&copy; 2025 Arrow Fence. All rights reserved.</p>
   </footer>
 
-  <!-- Fullscreen Overlay -->
-  <div id="promo-overlay" onclick="this.style.display='none'">
-    If you come mow today, this website is yours.
+  <div id="promo-overlay">
+    If u come mow today this website is yours.
   </div>
 </body>
 </html>
