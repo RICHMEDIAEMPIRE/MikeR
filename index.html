@@ -3,70 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GreenCut Lawn Services</title>
+  <title>GrassBoss Mowers | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
-      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f7f0;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
       color: white;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: 1;
-    }
-
-    .message {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
+      padding: 1.5rem;
       text-align: center;
     }
-
-    .message h1 {
-      font-size: 4rem;
-      text-shadow: 3px 3px 8px #000;
-      background-color: rgba(0,100,0,0.8);
-      padding: 1.5rem 2rem;
-      border-radius: 15px;
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: #66bb6a;
+      padding: 1rem;
     }
-
-    .content {
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('assets/images/lawn-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 2.5rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    .section {
       padding: 2rem;
-      z-index: 0;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .product {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      width: 250px;
+      border-radius: 8px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .nav-buttons a {
+      background: #2e7d32;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
     }
 
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      width: 100%;
+    /* Overlay styling */
+    #promo-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
       text-align: center;
-      font-size: 0.9rem;
-      color: #ccc;
+      padding: 2rem;
+      z-index: 9999;
+      font-family: 'Playfair Display', serif;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .hero { font-size: 1.5rem; height: 250px; }
+      .product { width: 90%; }
+      #promo-overlay { font-size: 1.5rem; padding: 1rem; }
     }
   </style>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="message">
-    <h1>COME MOW TODAY<br>AND THIS WEBSITE IS YOURS</h1>
+  <header>
+    <h1>GrassBoss Mowers</h1>
+    <p>Precision. Power. Performance.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="layouts.html">Showcase</a>
+    <a href="layout-restaurant.html">Previous Layout</a>
+    <a href="layout-artist.html">Next Layout</a>
+  </nav>
+
+  <div class="hero">
+    Cut Above the Rest
   </div>
 
-  <div class="content">
-    <!-- Add real business content here later -->
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>We sell, service, and upgrade all major lawn mower brands — from zero-turn beasts to compact push mowers. Need blade sharpening, engine repair, or a tune-up? We do it all.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Featured Mowers</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Zero-Turn ZTR 900</h3>
+        <p>60" cut, 24HP engine, commercial-grade</p>
+        <p><strong>$4,299</strong></p>
+      </div>
+      <div class="product">
+        <h3>PowerPush Pro</h3>
+        <p>Self-propelled, mulching, 21" blade</p>
+        <p><strong>$389</strong></p>
+      </div>
+      <div class="product">
+        <h3>ElectricEdge 40V</h3>
+        <p>Battery-powered, quiet, eco-friendly</p>
+        <p><strong>$499</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>What Customers Say</h2>
+    <p>“Best cut of my life. My neighbors are jealous.” — Jake T.</p>
+    <p>“They fixed my busted deck in 24 hours flat.” — Melissa R.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@grassboss.com</p>
+    <p>Phone: (555) 987-6543</p>
+    <p>Location: 321 Turf Lane, Mowtown, USA</p>
+  </section>
+
+  <div class="nav-buttons">
+    <a href="index.html">Home</a>
+    <a href="layouts.html">Showcase</a>
+    <a href="layout-restaurant.html">Previous Layout</a>
+    <a href="layout-artist.html">Next Layout</a>
   </div>
 
   <footer>
-    &copy; 2025 GreenCut Lawn Services
+    <p>&copy; 2025 GrassBoss Mowers. All rights reserved.</p>
   </footer>
+
+  <!-- Fullscreen Overlay -->
+  <div id="promo-overlay" onclick="this.style.display='none'">
+    If you come mow today, this website is yours.
+  </div>
 </body>
 </html>
