@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GrassBoss Mowers | Home</title>
+  <title>FencePros | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #f0f7f0;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
-      background: #2e7d32;
+      background: #3e2723;
       color: white;
       padding: 1.5rem;
       text-align: center;
@@ -24,7 +24,7 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
-      background: #66bb6a;
+      background: #6d4c41;
       padding: 1rem;
     }
     nav a {
@@ -33,7 +33,7 @@
       font-weight: bold;
     }
     .hero {
-      background-image: url('assets/images/lawn-hero.jpg');
+      background-image: url('assets/images/fence-hero.jpg');
       background-size: cover;
       background-position: center;
       height: 350px;
@@ -50,18 +50,13 @@
       padding: 2rem;
       text-align: center;
     }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-    .product {
+    .service-box {
       background: white;
       border: 1px solid #ccc;
       padding: 1rem;
-      width: 250px;
       border-radius: 8px;
+      max-width: 300px;
+      margin: 1rem auto;
     }
     .nav-buttons {
       display: flex;
@@ -71,7 +66,7 @@
       margin-top: 2rem;
     }
     .nav-buttons a {
-      background: #2e7d32;
+      background: #3e2723;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
@@ -79,14 +74,14 @@
       font-weight: bold;
     }
     footer {
-      background: #2e7d32;
+      background: #3e2723;
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 3rem;
     }
 
-    /* Overlay styling */
+    /* Overlay */
     #promo-overlay {
       position: fixed;
       top: 0; left: 0;
@@ -107,81 +102,71 @@
 
     @media (max-width: 600px) {
       .hero { font-size: 1.5rem; height: 250px; }
-      .product { width: 90%; }
+      .service-box { width: 90%; }
       #promo-overlay { font-size: 1.5rem; padding: 1rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>GrassBoss Mowers</h1>
-    <p>Precision. Power. Performance.</p>
+    <h1>FencePros</h1>
+    <p>Strong, Secure & Stylish Fencing</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="layouts.html">Showcase</a>
-    <a href="layout-restaurant.html">Previous Layout</a>
+    <a href="layout-mowers.html">Previous Layout</a>
     <a href="layout-artist.html">Next Layout</a>
   </nav>
 
   <div class="hero">
-    Cut Above the Rest
+    Built to Last. Installed with Pride.
   </div>
 
   <section class="section" id="services">
     <h2>Our Services</h2>
-    <p>We sell, service, and upgrade all major lawn mower brands — from zero-turn beasts to compact push mowers. Need blade sharpening, engine repair, or a tune-up? We do it all.</p>
-  </section>
-
-  <section class="section" id="products">
-    <h2>Featured Mowers</h2>
-    <div class="products">
-      <div class="product">
-        <h3>Zero-Turn ZTR 900</h3>
-        <p>60" cut, 24HP engine, commercial-grade</p>
-        <p><strong>$4,299</strong></p>
-      </div>
-      <div class="product">
-        <h3>PowerPush Pro</h3>
-        <p>Self-propelled, mulching, 21" blade</p>
-        <p><strong>$389</strong></p>
-      </div>
-      <div class="product">
-        <h3>ElectricEdge 40V</h3>
-        <p>Battery-powered, quiet, eco-friendly</p>
-        <p><strong>$499</strong></p>
-      </div>
+    <div class="service-box">
+      <h3>Wood Fencing</h3>
+      <p>Classic look, strong build. Pressure-treated or cedar options available.</p>
+    </div>
+    <div class="service-box">
+      <h3>Vinyl Fencing</h3>
+      <p>Low-maintenance and weather-resistant. Modern and clean.</p>
+    </div>
+    <div class="service-box">
+      <h3>Chain-Link Fencing</h3>
+      <p>Affordable and functional for pets, kids, and property security.</p>
     </div>
   </section>
 
   <section class="section" id="testimonials">
     <h2>What Customers Say</h2>
-    <p>“Best cut of my life. My neighbors are jealous.” — Jake T.</p>
-    <p>“They fixed my busted deck in 24 hours flat.” — Melissa R.</p>
+    <p>“Solid crew. Fast install and the fence looks amazing.” — Carla G.</p>
+    <p>“No more neighbor drama. Thanks FencePros!” — Ben M.</p>
   </section>
 
   <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@grassboss.com</p>
-    <p>Phone: (555) 987-6543</p>
-    <p>Location: 321 Turf Lane, Mowtown, USA</p>
+    <h2>Get a Quote</h2>
+    <p>Email: sales@fencepros.com</p>
+    <p>Phone: (555) 654-3210</p>
+    <p>Address: 789 Boundary Rd, Yardtown, USA</p>
   </section>
 
   <div class="nav-buttons">
     <a href="index.html">Home</a>
     <a href="layouts.html">Showcase</a>
-    <a href="layout-restaurant.html">Previous Layout</a>
+    <a href="layout-mowers.html">Previous Layout</a>
     <a href="layout-artist.html">Next Layout</a>
   </div>
 
   <footer>
-    <p>&copy; 2025 GrassBoss Mowers. All rights reserved.</p>
+    <p>&copy; 2025 FencePros. All rights reserved.</p>
   </footer>
 
   <!-- Fullscreen Overlay -->
   <div id="promo-overlay" onclick="this.style.display='none'">
-    If you come mow today, this website is yours.
+    If you come build a fence today, this website is yours.
   </div>
 </body>
 </html>
